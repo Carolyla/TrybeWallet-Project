@@ -96,7 +96,7 @@ Através dessa aplicação, será possível realizar as operações básicas de 
 
   - Serão dois dias de projeto.
   
-  - Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
+  - Data de entrega para avaliação final do projeto: `15/03/2022 14:00`.
 
 ---
 
@@ -105,9 +105,9 @@ Através dessa aplicação, será possível realizar as operações básicas de 
 ## Antes de começar a desenvolver
 
 1. Clone o repositório
-  * `git clone git@github.com:tryber/sd-0x-project-trybewallet.git`
+  * `git clone git@github.com:tryber/sd-018-b-project-trybewallet.git`
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-0x-project-trybewallet`
+    * `cd sd-018-b-project-trybewallet`
 
 2. Instale as dependências e inicialize o projeto
   * Instale as dependências:

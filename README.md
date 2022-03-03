@@ -94,7 +94,7 @@ Através dessa aplicação, será possível realizar as operações básicas de 
 
   - Projeto individual.
 
-  - Serão dois dias de projeto.
+  - Serão três dias de projeto.
   
   - Data de entrega para avaliação final do projeto: `15/03/2022 14:00`.
 

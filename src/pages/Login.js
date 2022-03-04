@@ -1,4 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import sendEmail from '../actions';
 
 class Login extends React.Component {
   state ={
@@ -29,8 +32,13 @@ class Login extends React.Component {
       },
     );
   };
- function handleClick () {
-  console.log('clicou')
+
+  handleClick = () => {
+    console.log('clicou');
+    const { email } = this.state;
+    const { dispatch, history } = this.props;
+    dispatch(sendEmail(email));
+    history.push('/carteira');
   }
 
   // fazer uma onchange  e uma onclick!
@@ -38,6 +46,7 @@ class Login extends React.Component {
   //   ? 'Invalid email address'
   //   : undefined);
   render() {
+    console.log(this.props);
     const { email, buttonIsDisabled, senha } = this.state;
     return (
       <>
@@ -77,5 +86,12 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+Login.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired,
+  }).isRequired,
+};
+
+export default connect()(Login);
 // validar com a função onchange, depois habilitar

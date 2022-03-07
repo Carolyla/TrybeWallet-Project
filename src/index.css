@@ -16,10 +16,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.header {
+.header-form {
   width: 100%;
 	float: left;
 	height: auto;
+  display:flex
+
 }
  
 a {
@@ -130,6 +132,31 @@ iframe {
 
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
+.header-login {
+  
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  display: flex;
+  font-family: Ubuntu-Bold;
+  font-size: 15px;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;   
+  background-color: rgb(20 33 33);
+ margin: 1px 10px;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #c369bf;
+}
+.wrap-header
+{
+  background-color: rgb(20 33 33);
+  margin: 0 auto;
+  margin: 0px 0px;
+}
 
 .limiter {
   width: 100%;
@@ -137,6 +164,7 @@ iframe {
 }
 
 .container-login100 {
+  
   width: 100%;  
   min-height: 100vh;
   display: -webkit-box;
@@ -148,12 +176,13 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
   z-index: 1;  
+
 }
 
 .container-login100::before {

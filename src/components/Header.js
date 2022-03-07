@@ -15,7 +15,7 @@ class Header extends Component {
             width={ 80 }
           />
         </div>
-        <div className="header">
+        <div className="header-form">
           <h3 data-testid="email-field">
             Email:
             {' '}

@@ -49,39 +49,71 @@ class Login extends React.Component {
     console.log(this.props);
     const { email, buttonIsDisabled, senha } = this.state;
     return (
-      <>
-        <form action="">
-          <h3> Login </h3>
-          <label htmlFor="email">
-            <input
-              type="email"
-              placeholder="Digite seu e-mail"
-              name="email"
-              data-testid="email-input"
-              onChange={ this.handleChange }
-              value={ email }
-            />
-          </label>
-        </form>
-        <label htmlFor="senha">
-          <input
-            type="password"
-            placeholder="Digite sua senha"
-            name="senha"
-            data-testid="password-input"
-            onChange={ this.handleChange }
-            value={ senha }
-          />
-        </label>
-        <button
-          data-testid="login-submit-button"
-          type="submit"
-          disabled={ buttonIsDisabled }
-          onClick={ this.handleClick }
-        >
-          Entrar
-        </button>
-      </>
+      <div className="limiter">
+        <div className="container-login100">
+          <div className="wrap-login100 p-t-30 p-b-50">
+            <span className="login100-form-title p-b-41">Login</span>
+            <form
+              action=""
+              className="login100-form validate-form p-b-33 p-t-5"
+            >
+              <label htmlFor="email">
+                <div
+                  className="wrap-input100 validate-input"
+                  data-validate="Enter username"
+                >
+                  <input
+                    className="input100"
+                    type="text"
+                    placeholder="Digite seu e-mail"
+                    name="email"
+                    data-testid="email-input"
+                    onChange={ this.handleChange }
+                    value={ email }
+                  />
+                  <span
+                    className="focus-input100"
+                    data-placeholder="&#xe82a;"
+                  />
+                </div>
+              </label>
+              <div
+                className="wrap-input100 validate-input"
+                data-validate="Enter username"
+              >
+                <label htmlFor="senha">
+                  <input
+                    className="input100"
+                    type="password"
+                    placeholder="Digite sua senha"
+                    name="senha"
+                    data-testid="password-input"
+                    onChange={ this.handleChange }
+                    value={ senha }
+                  />
+                  <span
+                    className="focus-input100"
+                    data-placeholder="&#xe80f;"
+                  />
+                </label>
+              </div>
+              <div className='button2'>
+                <div className="container-login100-form-btn m-t-32">
+                  <button
+                    className="login100-form-btn"
+                    data-testid="login-submit-button"
+                    type="submit"
+                    disabled={ buttonIsDisabled }
+                    onClick={ this.handleClick }
+                  >
+                    Entrar
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     );
   }
 }

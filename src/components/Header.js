@@ -8,17 +8,26 @@ class Header extends Component {
     console.log(this.props);
     return (
       <>
-        <h3 data-testid="email-field">
-          Email:
-          {' '}
-          {email}
-        </h3>
-        <h3 data-testid="total-field">
-          Despesas :
-          {' '}
-          {0}
-        </h3>
-        <h3 data-testid="header-currency-field">BRL</h3>
+        <div className="header-image">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1936/1936039.png"
+            alt="imagem-carteira-digital"
+            width={ 80 }
+          />
+        </div>
+        <div className="header">
+          <h3 data-testid="email-field">
+            Email:
+            {' '}
+            {email}
+          </h3>
+          <h3 data-testid="total-field">
+            Despesas :
+            {' '}
+            {0}
+          </h3>
+          <h3 data-testid="header-currency-field">BRL</h3>
+        </div>
       </>
     );
   }

@@ -1,7 +1,8 @@
-const getCoins = async () => {
+const apiCoins = async () => {
   const request = await fetch('https://economia.awesomeapi.com.br/json/all');
   const requestJson = await request.json();
-  return requestJson.results;
+  return requestJson;
 };
 
-export default getCoins;
+export default apiCoins;
+// fazer uma action, enviar o id ao reducer e fazer um filter !==

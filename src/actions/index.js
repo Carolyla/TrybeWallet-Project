@@ -12,7 +12,7 @@ export const sendEmail = (email) => ({
   email,
 });
 
-// ---ATUALIZA AS DESPESAS---
+// ---ATUALIZA AS DESPESAS NO ESTADO GLOBAL---
 
 export const sendForm = (state) => ({
   type: 'SEND_FORM',
@@ -20,13 +20,13 @@ export const sendForm = (state) => ({
 });
 
 // ----REQUISIÇÃO API----
-const getCoins = (json) => ({
-  type: 'GET_COINS',
-  payload: json.message,
-});
-
 const requestApi = () => ({
   type: 'REQUEST_API',
+});
+
+const getCoins = (json) => ({
+  type: 'GET_COINS',
+  payload: Object.keys(json),
 });
 
 const faliledRequest = (error) => ({

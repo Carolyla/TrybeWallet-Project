@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -161,6 +162,9 @@ hr {
 .limiter {
   width: 100%;
   margin: 0 auto;
+  gap: 30vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-login100 {
@@ -201,6 +205,7 @@ hr {
   width: 390px;
   border-radius: 10px;
   overflow: hidden;
+  margin: 0 auto;
 
   background: transparent;
 }
@@ -351,13 +356,11 @@ hr {
 [ Button ]*/
 .container-login100-form-btn {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 30px;
+  align-items: center;
+  flex-direction: column;
 }
 
 .login100-form-btn {

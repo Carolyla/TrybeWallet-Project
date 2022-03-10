@@ -4,6 +4,7 @@ import {
   GET_COINS,
   REQUEST_API,
   FAILED_COINS,
+  BUTTON_DELETE,
 } from '../actions';
 
 const INITIAL_STATE = {
@@ -28,6 +29,11 @@ const wallet = (state = INITIAL_STATE, action) => {
       isLoading: false };
   case FAILED_COINS:
     return { ...state, error: action.payload, isLoading: false };
+  case BUTTON_DELETE:
+    return {
+      currencies: state.currencies,
+      expenses: state.expenses.filter(({ id }) => id !== +action.payload),
+    };
 
   default:
     return state;

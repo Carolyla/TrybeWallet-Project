@@ -3,6 +3,7 @@ export const REQUEST_API = 'REQUEST_API';
 export const GET_COINS = 'GET_COINS';
 export const FAILED_COINS = 'FAILED_COINS';
 export const SEND_FORM = 'SEND_FORM';
+export const BUTTON_DELETE = 'BUTTON_DELETE';
 const API = 'https://economia.awesomeapi.com.br/json/all';
 
 // --- ENVIA E-MAIL AO HEADER---
@@ -18,7 +19,11 @@ export const sendForm = (state) => ({
   type: 'SEND_FORM',
   state,
 });
-
+// ---- EXCLUI A DESPESA ------
+export const buttonDelete = (state) => ({
+  type: 'BUTTON_DELETE',
+  payload: state,
+});
 // ----REQUISIÇÃO API----
 const requestApi = () => ({
   type: 'REQUEST_API',

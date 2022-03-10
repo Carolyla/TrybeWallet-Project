@@ -15,15 +15,17 @@ class Header extends Component {
 
     console.log(total);
     return (
-      <>
-        <div className="header-image">
+      <div className="header-form">
+        {' '}
+        <div>
           <img
             src="https://cdn-icons-png.flaticon.com/512/1936/1936039.png"
             alt="imagem-carteira-digital"
-            width={ 80 }
+            width={ 50 }
           />
+          <h1>TRYBEWALLET</h1>
         </div>
-        <div className="header-form">
+        <div>
           <h3 data-testid="email-field">
             Email:
             {' '}
@@ -36,7 +38,7 @@ class Header extends Component {
           </h3>
           <h3 data-testid="header-currency-field">BRL</h3>
         </div>
-      </>
+      </div>
     );
   }
 }

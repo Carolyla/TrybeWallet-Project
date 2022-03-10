@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import Button from './Button';
+import { buttonDelete } from '../actions';
 
 class Table extends Component {
+  handleClick = ({ target: { id } }) => {
+    console.log('clicou');
+    const { dispatch } = this.props;
+
+    dispatch(buttonDelete(id));
+  };
+
   render() {
     const { expenses } = this.props;
     console.log(expenses);
@@ -19,46 +28,49 @@ class Table extends Component {
           <th>Moeda de conversão</th>
           <th>Editar/Excluir</th>
         </tr>
-        {expenses.map((element) => (
-          <tbody key={ element.id }>
-            <td>{element.description}</td>
-            <td>{element.tag}</td>
-            <td>{element.method}</td>
-            <td>{(+element.value).toFixed(2)}</td>
-            <td>
-              {element.exchangeRates[element.currency].name.split('/')[0]}
-            </td>
-            <td>
-              {(+element.exchangeRates[element.currency].ask)
-                .toFixed(2) }
-
-            </td>
-            <td>
-              {(+element.value * element.exchangeRates[element.currency].ask)
-                .toFixed(2)}
-            </td>
-            <td>Real</td>
-            <td>
-              <button className="edit-btn" type="submit" data-testid="edit-btn">
-                Editar
-              </button>
-              <button
-                className="delete-btn"
-                type="submit"
-                data-testid="delete-btn"
-              >
-                Excluir
-              </button>
-            </td>
-          </tbody>
-        ))}
+        <tbody>
+          {expenses.map((element) => (
+            <tr key={ element.id }>
+              <td>{element.description}</td>
+              <td>{element.tag}</td>
+              <td>{element.method}</td>
+              <td>{(+element.value).toFixed(2)}</td>
+              <td>
+                {element.exchangeRates[element.currency].name.split('/')[0]}
+              </td>
+              <td>{(+element.exchangeRates[element.currency].ask).toFixed(2)}</td>
+              <td>
+                {(
+                  +element.value * element.exchangeRates[element.currency].ask
+                ).toFixed(2)}
+              </td>
+              <td>Real</td>
+              <td>
+                <Button
+                  label="Editar"
+                  name="editar"
+                  handleClick={ this.handleClick }
+                  id={ element.id }
+                />
+                <Button
+                  label="Excluir"
+                  name="excluir"
+                  dataTestId="delete-btn"
+                  handleClick={ this.handleClick }
+                  id={ element.id }
+                />
+              </td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     );
   }
 }
 
 Table.propTypes = {
-  expenses: PropTypes.arrayOf.isRequired,
+  dispatch: PropTypes.func.isRequired,
+  expenses: PropTypes.arrayOf().isRequired,
 };
 const mapStateToProps = (state) => ({
   expenses: state.wallet.expenses,

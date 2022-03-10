@@ -6,12 +6,12 @@ import Table from '../components/Table';
 class Wallet extends React.Component {
   render() {
     return (
-      <>
-        <div>TrybeWallet</div>
+      <div className="wallet">
+        TrybeWallet
         <Header />
         <Form />
         <Table />
-      </>
+      </div>
     );
   }
 }

@@ -10,20 +10,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: cadetblue;
+  background-color: rgb(88, 98, 87);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.header-form {
-  width: 100%;
-	float: left;
-	height: auto;
-  display:flex
-
+.wallet {
+background-color: rgb(173, 197, 170);
 }
+
+.header-form {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+
  
 a {
 	font-family: Ubuntu-Regular;

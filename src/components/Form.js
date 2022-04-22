@@ -71,6 +71,7 @@ class Form extends Component {
             {' '}
             Valor Despesas:
             <input
+              className="input-form"
               id="value"
               onChange={ this.handleChange }
               type="number"
@@ -86,6 +87,7 @@ class Form extends Component {
           Descrição da Despesa:
           <label htmlFor="description">
             <input
+              className="input-form"
               id="description"
               onChange={ this.handleChange }
               type="text"
@@ -106,22 +108,13 @@ class Form extends Component {
               onChange={ this.handleChange }
               value={ currency }
             >
-              {
-                currencyList
-                  .filter((item) => item !== 'USDT')
-                  .map((item) => (
-                    <option
-                      data-testid={ item }
-                      key={ item }
-                      value={ item }
-                    >
-                      { item }
-
-                    </option>
-
-                  ))
-              }
-
+              {currencyList
+                .filter((item) => item !== 'USDT')
+                .map((item) => (
+                  <option data-testid={ item } key={ item } value={ item }>
+                    {item}
+                  </option>
+                ))}
             </select>
           </label>
         </div>
@@ -159,23 +152,15 @@ class Form extends Component {
             </select>
           </label>
         </div>
-        <div className="button">
-          <button onClick={ this.handleClick } type="submit">
-            {' '}
+        <div className="button-div">
+          <button className="button-add" onClick={ this.handleClick } type="submit">
             Adicionar Despesa
-            {' '}
           </button>
         </div>
       </div>
     );
   }
 }
-
-Form.propTypes = {
-  currencies: PropTypes.func.isRequired,
-  fillEexchange: PropTypes.func.isRequired,
-  currencyList: PropTypes.arrayOf(PropTypes.object).isRequired,
-};
 
 const mapStateToProps = (state) => ({
   currencyList: state.wallet.currencies,
@@ -185,5 +170,11 @@ const mapDispatchToProps = (dispatch) => ({
   currencies: () => dispatch(fetchCoin()),
   fillEexchange: (state) => dispatch(sendForm(state)),
 });
+
+Form.propTypes = {
+  currencies: PropTypes.func.isRequired,
+  fillEexchange: PropTypes.func.isRequired,
+  currencyList: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 export default connect(mapStateToProps, mapDispatchToProps)(Form);
 // criar uma função que faz o calculo e manda pro header

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import image from '../images/trybewallet.jpg';
 
 class Header extends Component {
   render() {
@@ -16,27 +17,22 @@ class Header extends Component {
     console.log(total);
     return (
       <div className="header-form">
-        {' '}
-        <div>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/1936/1936039.png"
-            alt="imagem-carteira-digital"
-            width={ 50 }
-          />
-          <h1>TRYBEWALLET</h1>
+        <div className="container-logo">
+          <img src={ image } alt="logo trybe wallet" className="img-logo" />
+          <h3>TrybeWallet</h3>
         </div>
         <div>
-          <h3 data-testid="email-field">
+          <h5 data-testid="email-field">
             Email:
             {' '}
             {email}
-          </h3>
-          <h3 data-testid="total-field">
+          </h5>
+          <p data-testid="total-field">
             Despesas :
             {' '}
             {total.toFixed(2)}
-          </h3>
-          <h3 data-testid="header-currency-field">BRL</h3>
+          </p>
+          <p data-testid="header-currency-field">BRL</p>
         </div>
       </div>
     );

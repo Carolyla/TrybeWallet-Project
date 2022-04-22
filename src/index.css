@@ -10,23 +10,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(88, 98, 87);
+  background-color: rgb(235, 235, 218);
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.wallet {
-background-color: rgb(173, 197, 170);
-}
+
 
 .header-form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
-    background-color: rgb(222, 236, 195);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  background-color:#1f1f1f;
+  color: white;
+ 
 }
 
 
@@ -49,7 +50,7 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-  color: #fff;
+  color: rgb(212, 228, 228);
 }
 
 /*---------------------------------------------*/
@@ -59,9 +60,9 @@ h1,h2,h3,h4,h5,h6 {
 
 p {
 	font-family: Ubuntu-Regular;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.7;
-	color: #666666;
+	color: #f9f3f3;
 	margin: 0px;
 }
 
@@ -70,435 +71,259 @@ ul, li {
 	list-style-type: none;
 }
 
-
-/*---------------------------------------------*/
-input {
-	outline: none;
-	border: none;
-}
-
-textarea {
-  outline: none;
-  border: none;
-}
-
-textarea:focus, input:focus {
-  border-color: transparent !important;
-}
-
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
-
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
-
-input::-webkit-input-placeholder { color: #555555;}
-input:-moz-placeholder { color: #555555;}
-input::-moz-placeholder { color: #555555;}
-input:-ms-input-placeholder { color: #555555;}
-
-textarea::-webkit-input-placeholder { color: #555555;}
-textarea:-moz-placeholder { color: #555555;}
-textarea::-moz-placeholder { color: #555555;}
-textarea:-ms-input-placeholder { color: #555555;}
-
-label {
-  margin: 0;
-  display: block;
-}
-
-/*---------------------------------------------*/
-/* button {
-	outline: none !important;
-	border: none;
-	background: transparent;
-} */
-
-button:hover {
-	cursor: pointer;
-}
-
-iframe {
-	border: none !important;
-}
-
-
-/*//////////////////////////////////////////////////////////////////
-[ Utility ]*/
-.txt1 {
-  font-family: Poppins-Regular;
-  font-size: 13px;
-  color: #e5e5e5;
-  line-height: 1.5;
-}
-
-
-/*//////////////////////////////////////////////////////////////////
-[ login ]*/
-.header-login {
-  
-  line-height: 1.2;
-  text-align: center;
-  text-transform: uppercase;
-  display: block;
-  display: flex;
-  font-family: Ubuntu-Bold;
-  font-size: 15px;
-  color: #fff;
-  justify-content: space-between;
-  align-items: center;   
-  background-color: rgb(20 33 33);
- margin: 1px 10px;
-}
-hr {
-  border: 0;
-  border-top: 1px solid #c369bf;
-}
-.wrap-header
-{
-  background-color: rgb(20 33 33);
-  margin: 0 auto;
-  margin: 0px 0px;
-}
-
-.limiter {
-  width: 100%;
-  margin: 0 auto;
-  gap: 30vh;
+.div-background {
+  align-items: center;
   display: flex;
   flex-direction: column;
-}
-
-.container-login100 {
-  
-  width: 100%;  
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  
   background-repeat: no-repeat;
-  background-position: center;
+  min-height:100vh;
   background-size: cover;
-  position: relative;
-  z-index: 1;  
-
-}
-
-.container-login100::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0,0,0,0.65);
-}
-
-.wrap-login100 {
-  width: 390px;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 0 auto;
-
-  background: transparent;
-}
-
-
-/*------------------------------------------------------------------
-[ Form ]*/
-
-.login100-form {
-  width: 100%;
-  border-radius: 10px;
-  background-color: #fff;
-}
-
-.login100-form-logo {
-  font-size: 60px; 
-  color: #333333;
-
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background-color: #fff;
-  margin: 0 auto;
-}
-
-.login100-form-title {
-  font-family: Ubuntu-Bold;
-  font-size: 28px;
-  color: #fff;
-  line-height: 1.2;
-  text-align: center;
-  text-transform: uppercase;
-
-  display: block;
-}
-
-
-/*------------------------------------------------------------------
-[ Input ]*/
-
-.wrap-input100 {
-  width: 100%;
-  position: relative;
-  border-bottom: 1px solid #e6e6e6;
-  padding: 29px 0;
-}
-
-.input100 {
-  font-family: Ubuntu-Regular;
-  font-size: 20px;
-  color: #555555;
-  line-height: 1.2;
-
-  display: block;
-  width: 100%;
-  height: 50px;
-  background: transparent;
-  padding: 0 10px 0 80px;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-/*---------------------------------------------*/ 
-.focus-input100 {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-.focus-input100::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 0;
-  height: 1px;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-
-  background: #d41872;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: 30% 45%;
+  color:rgb(246, 244, 241);
+  background-image:url('./images/bg-01.jpg');
   
 }
-
-.focus-input100::after {
-  font-family: Linearicons-Free;
-  font-size: 18px;
-  color: #999999;
-
-  content: attr(data-placeholder);
-  display: block;
-  width: 100%;
-  position: absolute;
-  top: 40px;
-  left: 35px;
- 
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+.header-login  {
+ display: flex;
+ background-color: rgba(14, 14, 14, 0.468);
+ padding: 10px;
+ width: 100%;
+ justify-content: space-between;
+ align-items: center;
 }
+.header-form h3 {
+  font-size: 35px;
 
-.input100:focus {
-  padding-left: 60px;
 }
-
-.input100:focus + .focus-input100::after {
-  left: 23px;
-  color: #d41872;
-}
-
-.input100:focus + .focus-input100::before {
-  width: 100%;
-}
-
-.has-val.input100 + .focus-input100::after {
-  left: 23px;
-  color: #d41872;
-}
-
-.has-val.input100 + .focus-input100::before {
-  width: 100%;
-}
-
-.has-val.input100 {
-  padding-left: 60px;
-}
-
-
-/*------------------------------------------------------------------
-[ Button ]*/
-.container-login100-form-btn {
-  width: 100%;
+.container-login {
   display: flex;
-  flex-wrap: nowrap;
-  padding: 30px;
-  align-items: center;
+  border-style: none;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
   flex-direction: column;
+  width: 400px;
+  border-width: 10px;
+  color:black;
+  padding: 20px;
+  opacity: 0.9;
+  height: 254px;
 }
 
-.login100-form-btn {
-  font-family: Ubuntu-Bold;
-  font-size: 18px;
-  color: #fff;
-  line-height: 1.2;
-  text-transform: uppercase;
-
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
+input {
+  border: none;
   display: flex;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 8px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  padding-left: 7px;
+}
+
+.myButton {
+ --glow-color: rgb(252, 255, 176);
+ --glow-spread-color: rgba(249, 249, 106, 0.781);
+ --enhanced-glow-color: rgb(254, 255, 206);
+ --btn-color: rgb(17, 16, 17);
+ border: .25em solid var(--glow-color);
+ padding: 1em 3em;
+ color: var(--glow-color);
+ font-size: 15px;
+ font-weight: bold;
+ background-color: var(--btn-color);
+ border-radius: 1em;
+ outline: none;
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+ text-shadow: 0 0 .5em var(--glow-color);
+ position: relative;
+ transition: all 0.3s;
+}
+
+.myButton::after {
+ pointer-events: none;
+ content: "";
+ position: absolute;
+ top: 120%;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ background-color: var(--glow-spread-color);
+ filter: blur(2em);
+ opacity: .7;
+ transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.myButton:hover {
+ color: var(--btn-color);
+ background-color: var(--glow-color);
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.myButton:active {
+ box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+ .div-button {
+  margin-top: 35px;
   justify-content: center;
+  display: flex;
   align-items: center;
-  padding: 0 20px;
-  min-width: 160px;
-  height: 42px;
-  border-radius: 21px;
+ 
+ }
 
-  background: #fa4299;
-  background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
-  background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
-  background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
-  background: linear-gradient(left, #a445b2, #d41872, #fa4299);
-  position: relative;
-  z-index: 1;
+.login-title {
+   margin-top: 150px;
+ font-family: 'Kanit', sans-serif;
+   font-size: 30px;
+ 
+   font-weight:bold;
+ }
+ 
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+input::before {
+  background-color: rgb(255, 255, 255);
+}
+ .container-form {
+   background-color: black;
+   display:flex;
+   color: aliceblue;
+     background-color: black;
+    display: flex;
+    padding-left:13px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    align-items:center;
 
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+ }
+ table {
+   background-color: rgb(69, 69, 64, 0.7);
+   border-color: black;
+   border-collapse: collapse;
+   text-align: center;
+   min-height: 35px;
+   font-size: larger;
+   padding:10px;
+ }
+ table th {
+   background-color:#f0d738;
+   color: black;
+   
+ }
+ table td {
+   padding: 10px;
+
+} 
+
+.input-form {
+   padding: 1px;
+   margin: 5px;
+   align-items: flex-end;
+ }
+ .form {
+   margin: 5px;
+   display: flex;
+   flex-direction: column;
+ }
+ .form select {
+   border-radius: 10px;
+   padding: 3px;
+   margin: 6px;
+   background-color: white ;
+ }
+
+ .button-add {
+	box-shadow: 0px 1px 0px 0px #1c1b11;
+	background-color:#f0d738;
+	border-radius:6px;
+	border:1px solid #ffff19;
+	display:inline-block;
+	cursor:pointer;
+	color:#080808;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.button-add:hover {
+	background-color:#f6f6f1;
+}
+.button-add:active {
+	position:relative;
+	top:1px;
 }
 
-.login100-form-btn::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  border-radius: 21px;
-  background-color: #555555;
-  top: 0;
-  left: 0;
-  opacity: 0;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
+.button-div {
+  margin-left: 30px;
+  color: #1c1b11;
 }
 
-.login100-form-btn:hover {
-  background-color: transparent;
+ .background-wallet{
+  background-color: rgb(49, 50, 54);
+  background-image:url('./images/bg-01.jpg');
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  min-height:100vh;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: 30% 45%;
+  color:rgb(246, 244, 241);
+ }
+ .wallet {
+   display:flex;
+   flex-direction: column;
+   background-color: rgb(173, 197, 170);
+ }
+  
+.trybe-logo {
+  background-image: url('./images/trybewallet.jpg');
+  
+}
+.container-logo {
+  display:flex;
+  align-items: center
+}
+.img-logo {
+  width: 70px;
+  margin:10px;
+  border-radius: 15px;
+}
+ .img-login {
+   width: 40px;
+   margin-right: 8px;
+ }
+ .logo-login {
+   display: flex;
+   align-items: center;
+  
+ }
+
+ input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
 }
 
-.login100-form-btn:hover:before {
-  opacity: 1;
-}
- .button2 {padding: 29px 0;}
 
-
-/*------------------------------------------------------------------
-[ Alert validate ]*/
-
-.validate-input {
-  position: relative;
-}
-
-.alert-validate::before {
-  content: attr(data-validate);
-  position: absolute;
-  max-width: 70%;
-  background-color: #fff;
-  border: 1px solid #c80000;
-  border-radius: 2px;
-  padding: 4px 25px 4px 10px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 10px;
-  pointer-events: none;
-
-  font-family: Ubuntu-Bold;
-  color: #c80000;
-  font-size: 13px;
-  line-height: 1.4;
-  text-align: left;
-
-  visibility: hidden;
-  opacity: 0;
-
-  -webkit-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-
-.alert-validate::after {
-  content: "\f12a";
-  font-family: FontAwesome;
-  font-size: 16px;
-  color: #c80000;
-
-  display: block;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 15px;
-}
-
-.alert-validate:hover:before {
-  visibility: visible;
-  opacity: 1;
-}
-
-@media (max-width: 992px) {
-  .alert-validate::before {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-.container-form{
-      background-color: #262b33;
-    color: #ddd;
+input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(5, 4, 4) !important;
 }

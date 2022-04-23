@@ -66,7 +66,8 @@ Neste projeto, verificamos se voce é capaz de:
  </p>
 
 
-## Status do projeto
+## Gif do projeto
+
 
 
 ## 🔗 Links

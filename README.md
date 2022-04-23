@@ -67,7 +67,7 @@ Neste projeto, verificamos se voce é capaz de:
 
 
 ## Gif do projeto
-
+<img src="Trybewallet.gif" alt = "gif do projeto em execução" />
 
 
 ## 🔗 Links

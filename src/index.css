@@ -207,17 +207,18 @@ input::before {
    flex-wrap: nowrap;
    align-content: flex-end;
    align-items:flex-end;
-   font-weight: bold;
+ 
 
  }
  table {
-   background-color: rgb(69, 69, 64, 0.7);
+   background-color: rgb(69, 69, 64, 0.8);
    border-color: black;
    border-collapse: collapse;
    text-align: center;
    min-height: 35px;
    font-size: larger;
    padding:10px;
+  font-weight: bolder;
  }
  table th {
    background-color:#f0d738;

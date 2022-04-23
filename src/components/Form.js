@@ -48,11 +48,6 @@ class Form extends Component {
     });
   };
 
-  //  fillCurrencies = () => {
-  //    const { dispatch } = this.props;
-  //    dispatch(fetchCoin());
-  //  }
-
   render() {
     const {
       value,
@@ -100,7 +95,7 @@ class Form extends Component {
         </div>
         <div className="form">
           <label htmlFor="currency">
-            Moeda
+            Moeda:
             <select
               id="currency"
               name="currency"
@@ -120,7 +115,7 @@ class Form extends Component {
         </div>
         <div className="form">
           <label htmlFor="method">
-            Método de pagamentos
+            Método de pagamentos:
             <select
               id="method"
               name="method"
@@ -154,7 +149,7 @@ class Form extends Component {
         </div>
         <div className="button-div">
           <button className="button-add" onClick={ this.handleClick } type="submit">
-            Adicionar Despesa
+            Adicionar Despesa:
           </button>
         </div>
       </div>
@@ -177,4 +172,3 @@ Form.propTypes = {
   currencyList: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Form);
-// criar uma função que faz o calculo e manda pro header

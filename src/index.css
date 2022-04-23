@@ -183,11 +183,10 @@ input {
  }
 
 .login-title {
-   margin-top: 150px;
+ margin-top: 140px;
  font-family: 'Kanit', sans-serif;
-   font-size: 30px;
- 
-   font-weight:bold;
+ font-size: 30px;
+ font-weight:bold;
  }
  
 textarea:focus, input:focus {
@@ -200,14 +199,15 @@ input::before {
  .container-form {
    background-color: black;
    display:flex;
-   color: aliceblue;
-     background-color: black;
-    display: flex;
-    padding-left:13px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: flex-end;
-    align-items:center;
+   color: rgb(249, 251, 252);
+   background-color: black;
+   display: flex;
+   padding-left:13px;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-content: flex-end;
+   align-items:flex-end;
+   font-weight: bold;
 
  }
  table {
@@ -241,7 +241,7 @@ input::before {
  }
  .form select {
    border-radius: 10px;
-   padding: 3px;
+   padding: 5.5px;
    margin: 6px;
    background-color: white ;
  }
@@ -270,8 +270,11 @@ input::before {
 }
 
 .button-div {
-  margin-left: 30px;
+  display: flex;
   color: #1c1b11;
+  align-items: center;
+  margin: 13px;
+  margin-left: 30px;
 }
 
  .background-wallet{
@@ -305,7 +308,7 @@ input::before {
   align-items: center
 }
 .img-logo {
-  width: 70px;
+  width: 50px;
   margin:10px;
   border-radius: 15px;
 }

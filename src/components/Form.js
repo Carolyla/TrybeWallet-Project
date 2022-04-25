@@ -131,7 +131,7 @@ class Form extends Component {
         </div>
         <div className="form">
           <label htmlFor="tag">
-            Tipo de despesa
+            Tipo de despesa:
             <select
               id="tag"
               name="tag"
@@ -149,7 +149,7 @@ class Form extends Component {
         </div>
         <div className="button-div">
           <button className="button-add" onClick={ this.handleClick } type="submit">
-            Adicionar Despesa:
+            Adicionar Despesa
           </button>
         </div>
       </div>

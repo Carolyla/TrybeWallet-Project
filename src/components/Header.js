@@ -28,7 +28,7 @@ class Header extends Component {
             {email}
           </h5>
           <p data-testid="total-field">
-            Despesas :
+            Despesas:
             {' '}
             {total.toFixed(2)}
           </p>

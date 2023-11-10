@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-10T15:45:32.802Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="AxK9j_fmmdDuc4skCwrl" version="22.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-10T16:54:46.025Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="iQjc1v7eg2iOZ99K7jTp" version="22.1.0" type="github">
   <diagram name="Página-1" id="Ag4KgtUrRzJSa6hPJ-zC">
     <mxGraphModel dx="2261" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -37,11 +37,32 @@
         <mxCell id="kN6EqPMscIgF01qb4OFp-11" value="Colocar essa tabela em uma div de fundo branco com transparência de superior a 60% ,bordass arredondadas ocupando 75% da div mãe&lt;br&gt;Fonte na cor preta com realce" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-155" y="720" width="145" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="kN6EqPMscIgF01qb4OFp-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.984;entryY=0.084;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="kN6EqPMscIgF01qb4OFp-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.984;entryY=0.084;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="kN6EqPMscIgF01qb4OFp-13">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1003.82" y="624.93" as="sourcePoint" />
             <mxPoint x="913.996" y="610.00084" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="980" y="610" />
+            </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="kN6EqPMscIgF01qb4OFp-13" value="Ajuste de fonte&lt;br&gt;apresentar nome do usuario&lt;br&gt;cadastrado banco&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="945" y="630" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kN6EqPMscIgF01qb4OFp-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=1.005;entryY=0.297;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="kN6EqPMscIgF01qb4OFp-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="970" y="730" as="sourcePoint" />
+            <mxPoint x="1010" y="700" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="970" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kN6EqPMscIgF01qb4OFp-17" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="570" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kN6EqPMscIgF01qb4OFp-18" value="Separar&amp;nbsp; os bortões e ajustar funcionalidade, aplicar css" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="914" y="730" width="320" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
